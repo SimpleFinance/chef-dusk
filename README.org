@@ -33,3 +33,6 @@ vagrant plugin install berkshelf-ext
 vagrant up
 curl http://localhost:5000/
 #+END_SRC
+** License
+
+Apache License, Version 2.0
