@@ -1,6 +1,6 @@
 * =dusk=
 
-Install the [[https://github.com/obfuscurity/dusk][=dusk=]] [[https://github.com/graphite-project/graphite-web][Graphite]] + [[https://github.com/square/cubism][Cubism]] frontend.
+Install the [[https://github.com/obfuscurity/dusk][dusk]] [[https://github.com/graphite-project/graphite-web][Graphite]] + [[https://github.com/square/cubism][Cubism]] frontend.
 
 ** Recipes
 
@@ -24,7 +24,7 @@ Install git, ruby, and friends.
 
 ** Dependencies
 
-- [[https://github.com/opscode-cookbooks/runit][=runit=]]
+- [[https://github.com/opscode-cookbooks/runit][runit]]
 
 ** Vagrant
 
