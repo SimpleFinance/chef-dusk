@@ -1,0 +1,35 @@
+* =dusk=
+
+Install the [[https://github.com/obfuscurity/dusk][=dusk=]] [[https://github.com/graphite-project/graphite-web][Graphite]] + [[https://github.com/square/cubism][Cubism]] frontend.
+
+** Recipes
+
+*** =dusk::default=
+
+Deploy =dusk= from GitHub and manage it as a =runit= service.
+
+*** =dusk::deps=
+
+Install git, ruby, and friends.
+
+** Attributes
+
+| attribute | type                 | description                                     |
+|-----------+----------------------+-------------------------------------------------|
+| user      | string               | user to run the dusk service                    |
+| root      | path                 | installation directory                          |
+| revision  | Git ref              | revision to deploy                              |
+| repo      | Git repository URL   | Git repository                                  |
+| env       | hash{string=>string} | environment variables to provide to the service |
+
+** Dependencies
+
+- [[https://github.com/opscode-cookbooks/runit][=runit=]]
+
+** Vagrant
+
+#+BEGIN_SRC
+vagrant plugin install berkshelf-ext
+vagrant up
+curl http://localhost:5000/
+#+END_SRC
